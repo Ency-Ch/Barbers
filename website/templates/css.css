@@ -1,0 +1,13 @@
+<p id = 'testimonial1' >
+
+                            <img src="{% static 'website/sky.jpg' %}" alt="pic should be here"  style="border-radius: 50%;" y>
+                            <p>Sky Blue</p>
+                            <p>wright choice is my choice of barber whenever I need trim</p>
+                        </p>
+                    </p>
+
+                        <p id  = 'testimonial2'>
+                            <img src="{% static 'website/lunatik.jpg' %}" style="border-radius: 50%;" >
+                        <p>Luna Tik</p>
+                            reliable team of barbers, proffesional and friendly stuff
+                        </p>

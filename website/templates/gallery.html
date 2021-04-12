@@ -1,0 +1,45 @@
+﻿{% load static %}
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>wright choice barbers
+        </title>
+        <!--Main Css Start-->
+        <link rel="stylesheet" href="{% static 'website/barber/css/main.css' %}">
+        <!--Main Css End-->
+        <!--color changing css file-->
+        <link rel="stylesheet" id="theme-change" type="text/css" href="{% static 'website/barber/css/color2.css'%}">
+        <!--color changing css file end-->
+        <!-- favicon-icon -->
+
+        <link rel = "stylesheet"  href = "{% static 'website/style2'  %}">
+        <style>
+            #gallery{
+            border-style: solid;
+            border-radius:5px;
+            border-bottom-length: 50px;
+            padding:10px;
+            margin:  100px;
+            text-color: red;
+
+            }
+            h1{
+            color: red;
+            }
+
+        </style>
+
+</head>
+
+
+<div id = 'gallery' >
+    <center><h1>wright choice barbers</h1></p></center>
+    <center><h1>For more of our styles please visit our instagram page</h1></center>
+    <center><i class="fa fa-instagram"></i></center>
+
+    <center><strong><button><a href="https://www.instagram.com/wrightchoicebarbers/"  style = "text-align: centre; ">INSTAGRAM </a></button></strong></center>
+    <br>
+    <center><button ><a href = "{% url 'home' %}" >HOME</a></button></center>
+</div>
+

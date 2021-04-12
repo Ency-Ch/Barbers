@@ -1,0 +1,749 @@
+
+{% load static %}
+<!DOCTYPE html>
+
+<!--
+**********************************************************************************************************
+Copyright (c) 2017 Himanshu Softtech.
+********************************************************************************************************** -->
+<!--
+Template Name: barber html
+Version: 1.1.0
+Author: Kamleshyadav
+Website: http://himanshusofttech.com/
+Purchase: http://themeforest.net/user/kamleshyadav
+-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- Header Start -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wright choice barbers
+    </title>
+    <!--Main Css Start-->
+    <link rel="stylesheet" href="{% static 'website/barber/css/main.css' %}">
+    <!--Main Css End-->
+    <!--color changing css file-->
+    <link rel="stylesheet" id="theme-change" type="text/css" href="{% static 'website/barber/css/color2.css'%}">
+    <!--color changing css file end-->
+    <!-- favicon-icon -->
+
+    <link rel = "stylesheet"  href = "{% static 'website/style2'  %}">
+        <style>
+            #container {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            #container > div {
+                background-color: ;
+                font-size: 17px;
+                margin: 25px;
+                padding: 10px;
+                width: auto;
+                border-style: solid;
+                border-width: 2px;
+                border-color: grey;
+                border-radius:15px;
+            }
+
+          img {
+          border-radius:50%;
+          }
+        </style>
+</head>
+<!-- Header End -->
+<!-- Body Start -->
+<body>
+    <!-- color picker starts -->
+    <div id="style-switcher" class="hs_color_set">
+        <div>
+            <h3>
+					color options
+				</h3>
+            <ul class="colors">
+                <li>
+                    <p class='colorchange' id='color'>
+                    </p>
+                </li>
+                <li>
+                    <p class='colorchange' id='color2'>
+                    </p>
+                </li>
+                <li>
+                    <p class='colorchange' id='color3'>
+                    </p>
+                </li>
+                <li>
+                    <p class='colorchange' id='color4'>
+                    </p>
+                </li>
+                <li>
+                    <p class='colorchange' id='color5'>
+                    </p>
+                </li>
+                <li>
+                    <p class='colorchange' id='style'>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom">
+            <a href="" class="settings">
+                <i class="fa fa-gear fa-spin">
+					</i>
+            </a>
+        </div>
+    </div>
+    <!-- color picker ends-->
+    <!-- header top section start-->
+    <header class="header_main header_home">
+        <div class="ds_wrapper wrapper_top">
+            <div class="container">
+                <div class="row">
+                    <span class="toogle_span">
+							Notification Bar
+						</span>
+                    <div class="notification_bar">
+                        <div class="col-sm-9 col-lg-9">
+                            <div class="ds_top_notification">
+                                <div class="br_notification_content">
+                                    <i class="fa fa-mobile">
+										</i>
+                                    <div class="notification_text">
+                                        Call us an make an Appointment 078 67570023
+                                    </div>
+                                </div>
+                                <div class="br_notification_content">
+                                    <i class="fa fa-map-marker">
+										</i>
+                                    <div class="notification_text">
+                                        243 Beverly Road, HULL
+                                    </div>
+                                </div>
+                                <div class="br_notification_content">
+
+                                    <div class="notification_text">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-lg-3">
+                            <div class="ds_social_notification">
+                                <a target="_blank" href="https://twitter.com/wrightchoice1?lang=en">
+                                    <i class="fa fa-twitter">
+										</i>
+                                </a>
+
+                                <a target="_blank" href="https://www.instagram.com/wrightchoicebarbers/">
+                                    <i class="fa fa-instagram">
+										</i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header top section -->
+        <!-- header menu section -->
+        <div class="ds_wrapper wrapper_nav">
+            <div class="container">
+                <div class="row">
+                    <!-- navbar toggle start -->
+                    <div class="navbar-header pull-right">
+                        <button type="button" class="navbar_toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <i class="fa fa-list-ul">
+								</i>
+                        </button>
+                    </div>
+                    <!-- navbar toggle end-->
+                    <div class="col-sm-2 col-lg-2 col-md-2 col-xs-5">
+                        <div class="ds_logo_left">
+                            <a href="index.html">
+                                <img alt="" src="images/logo-img.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-8 col-md-8 col-xs-12 ds_navigation_menu">
+
+                        <h1><strong>WRIGHT CHOICE BARBERS</strong></h1>
+                        <!-- navbar_collapse -->
+                        <div class="navbar_collapse">
+                          <nav>
+                            <ul class="menu">
+                                <li class="current_page_item">
+                                    <a href="{% url 'home' %}">
+											Home
+										</a>
+                                    <ul class="sub-menu dropdown-menu">
+
+
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="gallery.html">
+											gallery
+										</a>
+                                    <ul class="sub-menu">
+
+                                        </li>
+
+<ul class="sub-menu">
+                                <li>
+                                    <a href="contact.html">
+											contact
+										</a>
+                                </li>
+</ul>
+                            </ul>
+                           </nav>
+                        </div>
+                        <!-- navbar_collapse -->
+                    </div>
+                    <div class="pull-right hidden-xs" id="appointment_btn">
+                        <div class="appointment_btn">
+                            <a href = "{% url 'contact' %}" >
+									Contact and Book an appointment
+								</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header menu section end -->
+
+                <!-- END REVOLUTION SLIDER -->
+            </article>
+        </div>
+        <!-- section end -->
+        <!-- SLIDER -->
+    </div>
+    <!-- slider_part end-->
+    <!-- gallery section start-->
+    <div class="ds_wrapper wrapper_middle">
+        <div class="container">
+            <div class="row">
+                <!-- left_side -->
+                <div class="col-sm-6 col-lg-6">
+                    <h2 class="block_title">
+							A QUICK INTRODUCTION
+						</h2>
+                    <div class="right_side_mdl">
+                        <p>
+                           We are <strong> wright choice barbers </strong> Yorkshire's premier barbers catering to all your hair care needs.
+                            All hair types welcome.
+                        </p>
+                        <img alt="" src="{% static 'website/wright_choice2.jpg' %}"  class="img-responsive circle" >
+                        <img alt="" src="{% static 'website/wright_choice_slider.jpg' %}"  class="img-responsive circle">
+                    </div>
+                </div>
+                <!-- left_side end-->
+                <!-- middle_side start-->
+                <div class="col-sm-3 col-lg-3 col-md-3">
+                    <div class="prices_section">
+                        <h2 class="block_title">
+								OUR PRICES
+							</h2>
+                        <ul class="price_ul">
+                            <li class="price_list">
+                                <div class="price_title">
+                                    Trim your Beard
+                                </div>
+                                <div class="price_right">
+                                    from £15
+                                </div>
+                            </li>
+                            <li class="price_list">
+                                <div class="price_title">
+                                    Trim your Hair
+                                </div>
+                                <div class="price_right">
+                                    from £40
+                                </div>
+                            </li>
+                            <li class="price_list">
+                                <div class="price_title">
+                                    Special Beard Treatment
+                                </div>
+                                <div class="price_right">
+                                    from £59
+                                </div>
+                            </li>
+                            <li class="price_list">
+                                <div class="price_title">
+                                    Color your Beard
+                                </div>
+                                <div class="price_right">
+                                    from £69
+                                </div>
+                            </li>
+                            <li class="price_list">
+                                <div class="price_title">
+                                    Wax your Beard
+                                </div>
+                                <div class="price_right">
+                                    from £12
+                                </div>
+                            </li>
+                            <li class="price_list">
+                                <div class="price_title">
+                                    Complete Treatment
+                                </div>
+                                <div class="price_right">
+                                    from £99
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- middle_side end-->
+                <!-- right side start -->
+                <div class="col-sm-3 col-lg-3 right_gallery">
+                    <h2 class="block_title">
+							STYLE GALLERY
+						</h2>
+                    <ul class="gallery clearfix">
+                        <li>
+                            <a href="{% static 'website/barber/wright_choice_small.jpg' %}" data-gal="prettyPhoto[gallery1]" title="BEARD">
+                                <img src="{% static 'website/braids.jpg' %}" alt="there should be a pic here">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="images/gallery/big/Big.png" data-gal="prettyPhoto[gallery1]" title="BEARD">
+                                <img src="{% static 'website/fade.jpg' %}" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="images/gallery/big/Big.png" data-gal="prettyPhoto[gallery1]" title="BEARD">
+                                <img src="{% static 'website/fade2.jpg' %}" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- right side  end-->
+            </div>
+        </div>
+    </div>
+    <!-- gallery section end-->
+
+    <!-- section_accordian -->
+    <div class="ds_wrapper section_accordian">
+        <div class="container">
+            <div class="row">
+                <!-- heading -->
+                <div class="block_heading">
+                    <div class="title_text">
+                        HIGHEST QUALITY SERVICES WITH CONFIRMATION FROM CLIENTS
+                    </div>
+
+<div id = container>
+                            <div>
+                                   <img src="{% static 'website/sky.jpg' %}" alt="pic should be here"  >
+                                <p>Sky Blue</p>
+                                <p>wright choice is my choice of barber whenever I need trim</p>
+                           </div>
+
+
+
+                        <div>
+                                <img src="{% static 'website/lunatik.jpg' %}"  >
+                                    <p>Luna Tik</p>
+                                   <p> reliable team of barbers, proffesional and friendly stuff </p>
+                        </div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="titleborderOut">
+                            <div class="titleborder ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider">
+                </div>
+                <!-- heading -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- left accordian end -->
+                <!-- right testimonial start-->
+
+            </div>
+        </div>
+    </div>
+    <!-- section_accordian end -->
+    <!-- discouont coupon section start -->
+    <!-- discouont coupon section end -->
+    <!-- call section start-->
+    <div class="ds_wrapper calling_section">
+        <div class="container">
+            <div class="center_image">
+                <img alt="" src="{% static 'website/resized_owner_wright.jpg' %}">
+            </div>
+        </div>
+    </div>
+    <!-- call section end-->
+    <!-- logo crousel section start-->
+    <div class="ds_wrapper crousel_section">
+        <div class="container">
+            <div class="logo_crousel">
+                <ul class="bxslider">
+                    <li>
+                        <img alt="" src="images/crousel/advertise-img.png">
+                    </li>
+                    <li>
+                        <img alt="" src="images/crousel/advertise-img.png" />
+                    </li>
+                    <li>
+                        <img alt="" src="images/crousel/advertise-img.png" />
+                    </li>
+                    <li>
+                        <img alt="" src="images/crousel/advertise-img.png" />
+                    </li>
+                    <li>
+                        <img alt="" src="images/crousel/advertise-img.png" />
+                    </li>
+                    <li>
+                        <img alt="" src="images/crousel/advertise-img.png" />
+                    </li>
+                    <li>
+                        <img alt="" src="images/crousel/advertise-img.png" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- logo crousel section end-->
+    <!-- barbers section start-->
+    <div class="ds_wrapper barbers_section" id="stylists">
+        <div class="container">
+            <div class="row">
+                <div class="block_heading">
+                    <div class="title_text">
+                        MEET OUR TEAM OF BEARD PROFESSIONALS
+                    </div>
+                    <div class="title_block">
+                        <h2>OUR BARBERS AND STYLISTS</h2>
+                        <div class="titleborderOut">
+                            <div class="titleborder ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider">
+                </div>
+
+                <!-- team_first -->
+
+                <!-- team_first -->
+                <!-- team_first -->
+            <div class="divider">
+                </div>
+                <div class="col-sm-3 col-lg-3">
+                    <div class="team_first">
+                        <div class="team_image">
+                            <img alt="" src= "{% static 'website/owner.jpg' %}" class="img-responsive circle">
+                        </div>
+                        <div class="title">
+                            <span>
+									BRIAN
+								</span>
+                        </div>
+                        <div class="ds_role">
+                          Barber
+                        </div>
+                        <div class="ds_description">
+                            <p>
+                                5 years of experience as a barber. You will be in trusted hands.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- team_first -->
+                <!-- team_first -->
+
+                <div class="col-sm-3 col-lg-3">
+                    <div class="team_first">
+                        <div class="team_image">
+                            <img alt="" src="{% static 'website/barber1.jpg' %}" class="img-responsive circle">
+                        </div>
+                        <div class="title">
+                            <span>
+									Ghana Man
+								</span>
+                        </div>
+                        <div class="ds_role">
+                            barber
+                        </div>
+                        <div class="ds_description">
+                            <p>
+                                7 years as a barber. You will be in trusted hands.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- team_first -->
+                <!-- team_first -->
+                <div class="col-sm-3 col-lg-3">
+                    <div class="team_first">
+                        <div class="team_image">
+                            <img alt="" src="http://placehold.it/186x186" class="img-responsive circle">
+                        </div>
+                        <div class="title">
+                            <span>
+									CLINT HAIRISTA
+								</span>
+                        </div>
+                        <div class="ds_role">
+                            Hair Specialist
+                        </div>
+                        <div class="ds_description">
+                            <p>
+                                12 years of experience in styling. You will be in trusted hands.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- team_first -->
+                    <div class="col-sm-3 col-lg-3">
+                    <div class="team_first">
+                        <div class="team_image">
+                            <img alt="" src="http://placehold.it/186x186" class="img-responsive circle">
+                        </div>
+                        <div class="title">
+                            <span>
+									CLINT HAIRISTA
+								</span>
+                        </div>
+                        <div class="ds_role">
+                            Hair Specialist
+                        </div>
+                        <div class="ds_description">
+                            <p>
+                                12 years of experience in styling. You will be in trusted hands.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- barbers section end-->
+    <!-- footer start -->
+    <footer>
+        <div class="ds_wrapper footer_section">
+            <div class="container">
+                <div class="row">
+                    <!--  buy now -->
+
+                    <!--  buy now end-->
+
+                    <!-- about us-->
+                    <div class="col-sm-3 col-lg-3">
+                        <h4 class="widget-title">
+								about us
+							</h4>
+                        <div class="textwidget">
+                            <p>
+                            wright choice is Yorkshire's premier barbershop catering to a wide range of hair care needs
+                            </p>
+                            <ul class="contact">
+                                <li>
+                                    <i class="fa fa-phone">
+										</i> 078 67570023
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope">
+										</i>info@wrightchoicebarbers.com
+                                </li>
+                                <li>
+                                    <i class="fa fa-home">
+										</i>www.wrightchoicebarbers.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--  about us end-->
+                    <!-- opening time-->
+                    <div class="col-sm-3 col-lg-3">
+                        <h4 class="widget-title">
+								OPENING TIMES
+							</h4>
+                        <div class="textwidget">
+                            <ul class="opening_times">
+                                <li>
+                                    <span class="day">
+											Monday
+										</span>
+                                    <span class="time">
+											08:00 - 15:00
+										</span>
+                                </li>
+                                <li>
+                                    <span class="day">
+											Tuesday
+										</span>
+                                    <span class="time">
+											10:00 - 16:00
+										</span>
+                                </li>
+                                <li>
+                                    <span class="day">
+											Wednesday
+										</span>
+                                    <span class="time">
+											08:00 - 15:00
+										</span>
+                                </li>
+                                <li>
+                                    <span class="day">
+											Thursday
+										</span>
+                                    <span class="time">
+											08:00 - 18:00
+										</span>
+                                </li>
+                                <li>
+                                    <span class="day">
+											Friday
+										</span>
+                                    <span class="time">
+											07:00 - 19:00
+										</span>
+                                </li>
+                                <li>
+                                    <span class="day">
+											Saturday
+										</span>
+                                    <span class="time">
+											Closed
+										</span>
+                                </li>
+                                <li>
+                                    <span class="day">
+											Sunday
+										</span>
+                                    <span class="time">
+											closed
+										</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--  opening time end-->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <!-- copyright_footer -->
+    <div class="ds_wrapper copyright_footer">
+        <div class="container">
+            <div class="row">
+                <div class="copyright_area">
+
+                    <div id="copyright">
+                        Wright Choice Barbers @2021 by
+                        <a href="https://twitter.com/encybiology/">
+								ency.dev
+							</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- copyright_footer -->
+    <!-- bottom tab -->
+    <div class="bottom_tab">
+        <div class="suppert_tab">
+            <h3 class="book_now">
+					BOOK NOW
+					<i class="fa fa-chevron-up">
+					</i>
+				</h3>
+        </div>
+    </div>
+    <!-- Bootstrap script -->
+    <!---
+    <script src= "{% static 'website/js/jquery.min.js' %}">
+    </script>
+    <script src="{% static 'website/js/bootstrap.min.js' %}">
+    </script>
+    <script type="text/javascript" src="{% static 'website/js/scripts.js' %}">
+    </script>
+    <!-- script -->
+    <!-- bx slider script -->
+    <!--<script type="text/javascript" src="{% static 'website/js/plugins/bxcrousel/js/jquery-bxslider.js' %}" >
+    </script> -->
+    <!-- bx slider script end -->
+    <!-- REVOLUTION JS FILES -->
+    <script type="text/javascript" src="{% static 'website/js/plugins/revolution/js/jquery.themepunch.tools.min.js' %}">
+    </script>
+    <script type="text/javascript" src="{% static 'website/js/plugins/revolution/js/jquery.themepunch.revolution.min.js' %}">
+    </script>
+    <script type="text/javascript" src="{% static 'website/js/plugins/revolution/js/revolution.extension.layeranimation.min.js' %}">
+    </script>
+    <script type="text/javascript" src="{% static 'website/js/plugins/revolution/js/revolution.extension.navigation.min.js' %}">
+    </script>
+    <script type="text/javascript" src="{% static 'website/js/plugins/revolution/js/revolution.extension.slideanims.min.js' %}">
+    </script>
+    <script type="text/javascript" src="{% static 'website/js/plugins/revolution/js/revolution.extension.actions.min.js' %}">
+    </script>
+    <script type="text/javascript" src="{% static 'website/js/plugins/revolution/js/revolution.extension.parallax.min.js' %}">
+    </script>
+    <!-- REVOLUTION JS FiLES -->
+    <!-- photo gallery -->
+    <script src="{% static 'website/js/plugins/photogallery/js/jquery.prettyPhoto.js' %}" type="text/javascript">
+    </script>
+    <script src="{% static 'website/js/plugins/portfolio/js/jquery.mixitup.js' %}" type="text/javascript">
+    </script>
+    <!-- photo gallery -->
+    <!-- ui tabs  -->
+    <script src="{% static 'website/js/plugins/uitabs/js/jquery-ui.js' %}" type="text/javascript">
+    </script>
+    <!-- ui tabs  -->
+    <!--counter js-->
+    <script type="text/javascript" src="{% static 'website/js/plugins/counter/js/jquery.countTo.js' %}">
+    </script>
+    <!--counter js-->
+
+</body>
+<!-- Body End -->
+</html>
